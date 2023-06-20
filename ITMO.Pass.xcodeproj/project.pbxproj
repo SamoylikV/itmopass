@@ -16,6 +16,8 @@
 		E0429D882A40D7A30085F0F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0429D872A40D7A30085F0F7 /* ContentView.swift */; };
 		E0429D8A2A40D7A30085F0F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0429D892A40D7A30085F0F7 /* Assets.xcassets */; };
 		E0429D8D2A40D7A30085F0F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0429D8C2A40D7A30085F0F7 /* Preview Assets.xcassets */; };
+		E0600E8A2A41569900D8FA5F /* get_hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0600E892A41569900D8FA5F /* get_hex.swift */; };
+		E0600E8D2A41576400D8FA5F /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = E0600E8C2A41576400D8FA5F /* PythonKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +47,7 @@
 /* Begin PBXFileReference section */
 		E0429D702A40D7A10085F0F7 /* ITMO.Pass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITMO.Pass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0429D732A40D7A10085F0F7 /* ITMO_PassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITMO_PassApp.swift; sourceTree = "<group>"; };
-		E0429D752A40D7A10085F0F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E0429D752A40D7A10085F0F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		E0429D772A40D7A30085F0F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0429D7A2A40D7A30085F0F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0429D802A40D7A30085F0F7 /* ITMO.Pass Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ITMO.Pass Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +55,8 @@
 		E0429D872A40D7A30085F0F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E0429D892A40D7A30085F0F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0429D8C2A40D7A30085F0F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E0600E892A41569900D8FA5F /* get_hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = get_hex.swift; sourceTree = "<group>"; };
+		E0600E8E2A41639C00D8FA5F /* ITMO.Pass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ITMO.Pass.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0600E8D2A41576400D8FA5F /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +99,12 @@
 		E0429D722A40D7A10085F0F7 /* ITMO.Pass */ = {
 			isa = PBXGroup;
 			children = (
+				E0600E8E2A41639C00D8FA5F /* ITMO.Pass.entitlements */,
 				E0429D732A40D7A10085F0F7 /* ITMO_PassApp.swift */,
 				E0429D752A40D7A10085F0F7 /* ContentView.swift */,
 				E0429D772A40D7A30085F0F7 /* Assets.xcassets */,
 				E0429D792A40D7A30085F0F7 /* Preview Content */,
+				E0600E892A41569900D8FA5F /* get_hex.swift */,
 			);
 			path = ITMO.Pass;
 			sourceTree = "<group>";
@@ -147,6 +154,9 @@
 				E0429D832A40D7A30085F0F7 /* PBXTargetDependency */,
 			);
 			name = ITMO.Pass;
+			packageProductDependencies = (
+				E0600E8C2A41576400D8FA5F /* PythonKit */,
+			);
 			productName = ITMO.Pass;
 			productReference = E0429D702A40D7A10085F0F7 /* ITMO.Pass.app */;
 			productType = "com.apple.product-type.application";
@@ -195,6 +205,9 @@
 				Base,
 			);
 			mainGroup = E0429D672A40D7A10085F0F7;
+			packageReferences = (
+				E0600E8B2A41576300D8FA5F /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
 			productRefGroup = E0429D712A40D7A10085F0F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0429D762A40D7A10085F0F7 /* ContentView.swift in Sources */,
+				E0600E8A2A41569900D8FA5F /* get_hex.swift in Sources */,
 				E0429D742A40D7A10085F0F7 /* ITMO_PassApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +451,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ITMO.Pass/ITMO.Pass.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ITMO.Pass/Preview Content\"";
@@ -457,6 +473,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Samoylik.ITMO-Pass";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -470,6 +487,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ITMO.Pass/ITMO.Pass.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ITMO.Pass/Preview Content\"";
@@ -490,6 +509,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Samoylik.ITMO-Pass";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -529,6 +549,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E0600E8B2A41576300D8FA5F /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E0600E8C2A41576400D8FA5F /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0600E8B2A41576300D8FA5F /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E0429D682A40D7A10085F0F7 /* Project object */;
 }

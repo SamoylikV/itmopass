@@ -63,10 +63,18 @@ struct ContentView: View {
     }
     
     func submitLogin() {
-        let sys = Python.import("sys")
-        let pythonVersion = sys.version
-        print(pythonVersion)
-        get_hex(username: username, password: password)
+        get_hex(username: username, password: password) { result in
+            switch result {
+            case .success(let hexcode):
+                if let hexcode = hexcode {
+                    print(hexcode)
+                } else {
+                    print("Error: Hexcode is nil")
+                }
+            case .failure(let error):
+                print("Error:", error)
+            }
+        }
     }
 }
 

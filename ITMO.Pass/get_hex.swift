@@ -55,4 +55,4 @@ func getHex(username: String, password: String) {
     }
 }
 
-getHex(username: "foo", password: "bar")
+//getHex(username: "foo", password: "bar")
